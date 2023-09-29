@@ -1,0 +1,175 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #005c97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+
+.form-container {
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 95vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.form-container .login-container {
+  width: 500px;
+  margin: 0 auto;
+}
+.form-container .login-container > h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.form-container .login-container > p,
+.form-container .login-container span {
+  color: #555;
+  text-align: center;
+}
+
+.form-container .login-container label {
+  display: block;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.form-container .login-container input.input {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  border: solid 1px #ccc;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form-container .login-container input.input:focus {
+  outline: solid 2px rgb(0, 153, 255);
+}
+.form-container .login-container .provers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-container a {
+  color: rgb(8, 0, 255);
+  text-decoration: none;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+.form-container .login-container .providers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  border: none;
+  padding: 10px auto;
+  width: 100%;
+  font-weight: bolder;
+  display: block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-container .login-container button.btn,
+.form-container .login-container input.btn {
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: bolder;
+  display: block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn.btn-login {
+  background-color: black;
+  color: white;
+}
+
+.btn.btn-login:hover {
+  background-color: #333;
+}
+
+.btn.btn-google {
+  background-color: white;
+  color: black;
+  border: solid 1px #ccc;
+}
+
+.btn.btn-google:hover {
+  background-color: rgb(212, 212, 212);
+  color: black;
+}
+
+.btn.btn-facebook {
+  background-color: rgb(10, 82, 216);
+  color: white;
+  border: 0;
+}
+
+.btn.btn-facebook:hover {
+  background-color: rgb(6, 61, 163);
+  color: white;
+}
+
+.btn.btn-twitter {
+  background-color: rgb(10, 168, 216);
+  color: white;
+}
+
+.btn.btn-twitter:hover {
+  background-color: rgb(7, 133, 172);
+  color: white;
+}
+
+.form-container .login-container .options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container .welcome-screen-container {
+  background-color: black;
+  height: 100%;
+  width: 50%;
+}
+
+@media screen and (max-width: 1357px) {
+  .form-container {
+    width: 95%;
+  }
+  .form-container .login-container {
+    width: 400px;
+    margin: 0 auto;
+  }
+}

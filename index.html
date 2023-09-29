@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer Formulario/First Form</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="login-container">
+        <h2>Welcome</h2>
+        <p>Select an authentication method</p>
+        <form action="">
+          <p>
+            <label for="username">Username</label>
+            <input class="input" type="text" name="username" id="username" />
+          </p>
+
+          <p>
+            <label for="password">Password</label>
+            <input class="input" type="text" name="username" id="username" />
+          </p>
+
+          <div class="options">
+            <div>
+              remember me
+              <input type="checkbox" name="rememberme" id="" />
+            </div>
+            <div>
+              <a href="#">Do you forgot your password?</a>
+            </div>
+          </div>
+          <p>
+            <input class="btn btn-login" type="submit" value="Iniciar Seción" />
+          </p>
+          <div class="providers">
+            <span>choose another to authenticate</span>
+            <button class="btn btn-google">Google</button>
+            <button class="btn btn-facebook">Facebook</button>
+            <button class="btn btn-twitter">Twitter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
